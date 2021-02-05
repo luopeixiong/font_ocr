@@ -1,0 +1,13 @@
+version: '2'
+services:
+  artio_ocr:
+    image: registry.cn-shanghai.aliyuncs.com/artio/artio_ocr
+    container_name: artio_ocr
+    volumes:
+      - ./ocr/chi_sim.traineddata:/usr/share/tesseract-ocr/tessdata/chi_sim.traineddata
+    environment:
+      - "TZ=Asia/Shanghai"
+    ports:
+      - 8088:8088
+    tty: true
+
