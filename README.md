@@ -3,7 +3,7 @@
 # css字体反混淆一键部署方案
 
 git图片显示有问题 
-可以看这 [链接](https://www.jianshu.com/writer#/notebooks/49400538/notes/83534700/preview)
+可以看这 [链接](https://www.jianshu.com/p/3c57371a0e89)
 
 提供api 
     - url     反混淆文本使用的woff 链接
