@@ -3,8 +3,9 @@ services:
   artio_ocr:
     image: registry.cn-shanghai.aliyuncs.com/artio/artio_ocr
     container_name: artio_ocr
-    volumes:
-      - ./ocr/chi_sim.traineddata:/usr/share/tesseract-ocr/tessdata/chi_sim.traineddata
+    # 配置chi_sim 其他数据集
+    #volumes:
+    #  - ./ocr/chi_sim.traineddata:/usr/share/tesseract-ocr/tessdata/chi_sim.traineddata
     environment:
       - "TZ=Asia/Shanghai"
     ports:
